@@ -1,6 +1,6 @@
 {
 
-  "name": "wgetus/search-engine-google",
+  "name": "serps/search-engine-google",
   "description": "Google Rules and client for SERPS",
   "type": "library",
   "keywords": ["SERPS", "Google"],
