@@ -47,14 +47,6 @@ class GoogleClient
      */
     public function query(GoogleUrlInterface $googleUrl, BrowserInterface $browser = null)
     {
-
-        if ($googleUrl->getResultType() !== GoogleUrl::RESULT_TYPE_ALL) {
-            throw new Exception(
-                'The requested url is not valid for the google client.'
-                . 'Google client only supports general searches. See GoogleUrl::setResultType() for more infos.'
-            );
-        }
-
         if (null === $browser) {
             $browser = $this->defaultBrowser;
         }
